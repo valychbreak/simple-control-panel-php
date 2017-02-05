@@ -26,7 +26,8 @@
 	}
 
 	function onStreamActionStart() {
-		$GLOBALS['notificationMessage'] = "The stream has been started";
+		$output = shell_exec('sh simple-script.sh');
+		$GLOBALS['notificationMessage'] = "The stream has been started". $output;
 	}
 
 	function onStreamActionStop() {
