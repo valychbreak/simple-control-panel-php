@@ -86,6 +86,13 @@
 		display: inline-block;
 	    }
 
+	    .nav li.half-item
+	    {
+		width: 49%;
+		list-style-type: none;
+		display: inline-block;
+	    }
+
 	    .nav a
 	    {
 		display: block;
@@ -112,31 +119,32 @@
     <body>
 	<ul class="nav">
 	    <li>TIMER</li>
-	    <li><a href="index.php?timer=start">START</a></li>
-	    <li><a href="index.php?timer=stop">STOP</a></li>
+	    <li class="half-item"><a href="index.php?timer=start">START</a></li>
+	    <li class="half-item"><a href="index.php?timer=stop">STOP</a></li>
 
-	    <li><a href="index.php?timer=set&value=00:00">00:00</a></li>
-	    <li><a href="index.php?timer=set&value=45:00">45:00</a></li>
-	    <li><a href="index.php?timer=set&value=90:00">90:00</a></li>
-	    <li><a href="index.php?timer=set&value=105:00">105:00</a></li>
+	    <li class="half-item"><a href="index.php?timer=set&value=00:00">00:00</a></li>
+	    <li class="half-item"><a href="index.php?timer=set&value=45:00">45:00</a></li>
+	    <li class="half-item"><a href="index.php?timer=set&value=90:00">90:00</a></li>
+	    <li class="half-item"><a href="index.php?timer=set&value=105:00">105:00</a></li>
 
-	    <li><a href="index.php?timer=increase">INCREASE</a></li>
-	    <li><a href="index.php?timer=decrease">DECREASE</a></li>
+	    <li class="half-item"><a href="index.php?timer=increase">INCREASE</a></li>
+	    <li class="half-item"><a href="index.php?timer=decrease">DECREASE</a></li>
 	</ul>
 
 	<ul class="nav">
 	    <li>EXTRA TIME</li>
-	    <li><a href="index.php?extra=increase">+1</a></li>
-	    <li><a href="index.php?extra=decrease">-1</a></li>
+	    <li class="half-item"><a href="index.php?extra=increase">+1</a></li>
+	    <li class="half-item"><a href="index.php?extra=decrease">-1</a></li>
 	</ul>
 
 	<ul class="nav">
 	    <li>SCORE</li>
-	    <li><a href="index.php?score=host&value=+1">HOST +1</a></li>
-	    <li><a href="index.php?score=guest&value=+1">GUEST +1</a></li>
-
-	    <li><a href="index.php?score=host&value=-1">HOST -1</a></li>
-	    <li><a href="index.php?score=guest&value=-1">GUEST -1</a></li>
+	    <li class="half-item">HOST</li>
+	    <li class="half-item">GUEST</li>
+	    <li class="half-item"><a href="index.php?score=host&value=+1">+1</a></li>
+	    <li class="half-item"><a href="index.php?score=guest&value=+1">+1</a></li>
+	    <li class="half-item"><a href="index.php?score=host&value=-1">-1</a></li>
+	    <li class="half-item"><a href="index.php?score=guest&value=-1">-1</a></li>
 	</ul>
   
     </body>
